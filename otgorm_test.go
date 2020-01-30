@@ -5,12 +5,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/opentracing/opentracing-go/ext"
-
 	sqlmock "github.com/DATA-DOG/go-sqlmock"
-
-	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
+	"github.com/opentracing/opentracing-go/ext"
 	opentracing "github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/mocktracer"
 	"github.com/stretchr/testify/assert"

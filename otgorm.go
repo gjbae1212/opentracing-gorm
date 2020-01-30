@@ -28,6 +28,7 @@ func (cn callbackName) ToString() string {
 	return string(cn)
 }
 
+// DB is a wrapper for *gorm.DB.
 type DB interface {
 	WithContext(ctx context.Context) *gorm.DB
 }
